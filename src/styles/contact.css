@@ -1,0 +1,9 @@
+footer {
+    border-top: 0.2em solid black;
+    text-align: center;
+    padding: 1em;
+}
+
+footer img {
+    margin: 1em;
+}

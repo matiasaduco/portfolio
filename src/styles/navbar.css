@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    /* background-color: #0B263B; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    height: 5vh;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 2em;
+    padding: 0.7em 0;
+    flex-basis: 25%;
+    /* border: 0.15em solid #FFFFFF;
+    border-bottom: 0.15em solid #A11DAE; */
+}
+
+.navbar a:link {
+    color: #424242;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.navbar a:visited {
+    color: #424242;
+}
+
+.navbar {
+text-align: center;
+}

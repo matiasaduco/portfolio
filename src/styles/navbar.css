@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -9,10 +9,10 @@
 }
 
 .navbar a {
+    font-size: 1.4em;
     text-decoration: none;
-    margin: 0 2em;
     padding: 0.7em 0;
-    flex-basis: 25%;
+    flex-basis: 15%;
     /* border: 0.15em solid #FFFFFF;
     border-bottom: 0.15em solid #A11DAE; */
 }

@@ -2,18 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
     height: 60vh;
     margin: 0 auto;
 }
 
 .aboutMe img {
-    flex-basis: 35%;
     border-radius: 50%;
+    max-width: 20%;
+}
+
+.details {
+    margin-left: 5em;
+    flex-basis: 50%;
 }
 
 .name {
-    margin: 0.4em 0;
+    font-size: 5em;
     flex-basis: 100%;
 }
 
@@ -22,14 +26,28 @@
 }
 
 .info span {
-    flex-basis: 45%;
+    flex-basis: 50%;
+}
+
+.info b {
+    font-size: 2em;
 }
 
 .info i {
     color: gray;
-    font-size: 12px;
+    font-size: 1.2em;
 }
 
 .button {
     margin: 0.5em 0;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.button:hover {
+    cursor: pointer;
 }

@@ -1,10 +1,12 @@
 import '../styles/aboutMe.css';
+import perfil from '../assets/images/perfil.jpg';
+import blankPerfil from '../assets/images/blank-perfil.png';
 
 const AboutMe = () => {
   return (
     <div className='aboutMe'>
-      <img src='#' alt='Foto de Perfil' />
-      <div className='flex-wrap'>
+      <img src={blankPerfil} alt='Foto de Perfil' />
+      <div className='flex-wrap details'>
         <h1 className='name'>Matías González Aduco</h1>
         <div className='flex-wrap info'>
           <span>

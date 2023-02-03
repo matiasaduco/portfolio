@@ -1,12 +1,8 @@
-* {
-    margin: 0;
-    /* background-color: #0B263B; */
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     width: 60%;
     height: 5vh;
@@ -31,8 +27,4 @@
 
 .navbar a:visited {
     color: #424242;
-}
-
-.navbar {
-text-align: center;
 }

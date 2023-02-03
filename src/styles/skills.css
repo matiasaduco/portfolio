@@ -2,27 +2,12 @@
     padding: 5em;
 }
 
-.title {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.subtitle {
-    font-size: 1.7em;
-    color: grey;
-    text-align: center;
-    margin: 1em;
-}
-
-.flex-container {
-    display: flex;
+.habilities {
     justify-content: space-around;
     margin: 0.7em auto;
     width: 80%;
-    flex-wrap: wrap;
 }
 
-.flex-container img {
+.habilities img {
     flex-basis: 16%;
 }

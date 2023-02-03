@@ -1,12 +1,12 @@
-import "../styles/aboutMe.css";
+import '../styles/aboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div className="aboutMe">
-      <img src="#" alt="Foto de Perfil" />
-      <div className="container">
-        <h1 className="name">Matías González Aduco</h1>
-        <div className="info">
+    <div className='aboutMe'>
+      <img src='#' alt='Foto de Perfil' />
+      <div className='flex-wrap'>
+        <h1 className='name'>Matías González Aduco</h1>
+        <div className='flex-wrap info'>
           <span>
             <b>Fecha de Nacimiento</b>
             <br />
@@ -28,7 +28,7 @@ const AboutMe = () => {
             <i>Inglés - Intermedio</i>
           </span>
         </div>
-        <button className="button">Descargar CV</button>
+        <button className='button'>Descargar CV</button>
       </div>
     </div>
   );

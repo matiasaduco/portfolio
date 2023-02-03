@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    /* background-color: #0B263B; */
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.7em;
+    color: grey;
+    text-align: center;
+    margin: 1em;
+}

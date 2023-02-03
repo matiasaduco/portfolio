@@ -38,6 +38,6 @@
     overflow: hidden;
 }
 
-.flex-container-project b, i {
+.flex-container-project b, .flex-container-project i {
     margin: 5%;
 }

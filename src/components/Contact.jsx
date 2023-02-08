@@ -1,19 +1,33 @@
 import '../styles/contact.css';
+import github from '../assets/icons/tools/github.png';
+import gmail from '../assets/icons/gmail.png';
+import linkedin from '../assets/icons/linkedin.png';
+
+import html from '../assets/icons/languages/html.png';
+import css from '../assets/icons/languages/css.png';
+import javascript from '../assets/icons/languages/javascript.jpg';
+import react from '../assets/icons/tools/react.png';
 
 const Contact = () => {
   return (
-    <footer>
+    <footer id='contact'>
       <div>
-        <img src='#' alt='red1' />
-        <img src='#' alt='red2' />
-        <img src='#' alt='red3' />
+        <a href='https://github.com/matiasaduco?tab=repositories'>
+          <img src={github} alt='red1' />
+        </a>
+        <a href=''>
+          <img src={gmail} alt='red2' />
+        </a>
+        <a href='https://www.linkedin.com/in/matias-gonzalez-b516b021b/'>
+          <img src={linkedin} alt='red3' />
+        </a>
       </div>
       <div>
-        <section>Tecnología Usada</section>
-        <img src='#' alt='used1' />
-        <img src='#' alt='used2' />
-        <img src='#' alt='used3' />
-        <img src='#' alt='used4' />
+        <section style={{ color: 'grey' }}>Tecnología Usada</section>
+        <img src={html} alt='used1' />
+        <img src={css} alt='used2' />
+        <img src={javascript} alt='used3' />
+        <img src={react} alt='used4' />
       </div>
     </footer>
   );

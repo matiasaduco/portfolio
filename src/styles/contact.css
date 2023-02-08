@@ -6,4 +6,11 @@ footer {
 
 footer img {
     margin: 1em;
+    max-width: 50px;
+    max-height: 50px;
+    transition: 1.2s;
+}
+
+footer div a img:hover {
+    transform: rotate(1turn);
 }

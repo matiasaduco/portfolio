@@ -5,7 +5,7 @@ import tools from '../assets/icons/tools/Tools';
 
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
       <section className='title'>Skills</section>
       <Habilities title='Lenguajes' resources={languages} />
       <br />

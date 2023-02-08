@@ -4,10 +4,10 @@ const Menu = () => {
   return (
     <header>
       <nav className='navbar'>
-        <a href='inicio'>Inicio</a>
-        <a href='skills'>Skills</a>
-        <a href='proyectos'>Proyectos</a>
-        <a href='contacto'>Contácto</a>
+        <a href='#inicio'>Inicio</a>
+        <a href='#skills'>Skills</a>
+        <a href='#projects'>Proyectos</a>
+        <a href='#contact'>Contácto</a>
       </nav>
     </header>
   );

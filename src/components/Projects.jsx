@@ -2,7 +2,7 @@ import '../styles/projects.css';
 
 const Projects = () => {
   return (
-    <div className='project'>
+    <div className='project' id='projects'>
       <section className='title'>Proyectos</section>
       <section className='selection-project'>
         <span>

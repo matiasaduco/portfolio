@@ -30,12 +30,12 @@
 }
 
 .info b {
-    font-size: 2em;
+    font-size: 1.7vw;
 }
 
 .info i {
     color: gray;
-    font-size: 1.2em;
+    font-size: 1.1vw;
 }
 
 .button {
@@ -43,11 +43,12 @@
     padding: 0.8em 1.8em;
     font-size: 1em;
     color: white;
-    background-color: blueviolet;
+    background-color: #8D33FF;
     border: none;
     border-radius: 0.3em;
 }
 
 .button:hover {
     cursor: pointer;
+    background-color: #7000FF;
 }

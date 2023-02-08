@@ -9,7 +9,7 @@ const Skills = () => {
       <section className='title'>Skills</section>
       <Habilities title='Lenguajes' resources={languages} />
       <br />
-      <Habilities title='Herramientas' resources={tools} />
+      <Habilities title='Conocimientos' resources={tools} />
     </div>
   );
 };

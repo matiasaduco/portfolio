@@ -1,5 +1,5 @@
 .skills {
-    padding: 5em;
+    padding: 5vw;
 }
 
 .habilities {
@@ -10,6 +10,6 @@
 
 .habilities img {
     flex-basis: 16%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 8vw;
+    max-height: 8vw;
 }

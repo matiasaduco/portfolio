@@ -6,15 +6,16 @@
     margin: 0 auto;
     width: 60%;
     height: 5vh;
+    position: sticky;
+    top: 0;
 }
 
 .navbar a {
     font-size: 1.4em;
     text-decoration: none;
-    padding: 0.7em 0;
+    padding: 0.7vw 0;
     flex-basis: 15%;
-    /* border: 0.15em solid #FFFFFF;
-    border-bottom: 0.15em solid #A11DAE; */
+    border: 0.15em solid #FFF;
 }
 
 .navbar a:link {
@@ -23,6 +24,7 @@
 
 .navbar a:hover {
     color: #000000;
+    border-bottom: 0.15em solid #8D33FF;
 }
 
 .navbar a:visited {

@@ -12,7 +12,7 @@
 }
 
 .selection-project span {
-    width: 30%;
+    flex-basis: 20%;
     height: 50vh;
     background-color: #FFFFFF;
     border: 0.1em solid grey;
@@ -27,6 +27,8 @@
 
 .selection-project img {
     height: 30vh;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 
 .selection-project b {
@@ -35,7 +37,11 @@
 
 .selection-project i {
     font-size: 1.2em;
+    display: -webkit-box;
     overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .selection-project b, .selection-project i {

@@ -1,25 +1,20 @@
 import '../styles/projects.css';
+import ProjectCard from './ProjectCard';
+import projectdd from '../assets/images/project-dd.jpg';
+
+const description =
+  'Es una página sobre D&D. Se pueden descargar manuales, campañas e incluso crear tus propios personajes.';
 
 const Projects = () => {
   return (
     <div className='project' id='projects'>
       <section className='title'>Proyectos</section>
       <section className='selection-project'>
-        <span>
-          <img src='#' alt='project1' />
-          <b>Proyecto 1</b>
-          <i>Descripción</i>
-        </span>
-        <span>
-          <img src='#' alt='project1' />
-          <b>Proyecto 1</b>
-          <i>Descripción</i>
-        </span>
-        <span>
-          <img src='#' alt='project1' />
-          <b>Proyecto 1</b>
-          <i>Descripción</i>
-        </span>
+        <ProjectCard
+          img={projectdd}
+          title='Project D&D'
+          description={description}
+        />
       </section>
     </div>
   );

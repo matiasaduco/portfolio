@@ -24,7 +24,7 @@ const Contact = () => {
           <img src={gmail} alt='red2' />
         </a>
         <a
-          href='https://www.linkedin.com/in/matias-gonzalez-b516b021b/'
+          href='https://www.linkedin.com/in/matias-aduco/'
           target='_blank'
           rel='noreferrer'
         >

@@ -7,35 +7,37 @@
     justify-content: space-around;
 }
 
-.selection-project * {
-    display: block;
-}
-
-.selection-project span {
+.card {
     flex-basis: 20%;
-    height: 50vh;
+    height: 51vh;
     background-color: #FFFFFF;
     border: 0.1em solid grey;
     border-radius: 2%;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.selection-project span:hover {
+.card:hover {
     transform: scale(1.3);
     box-shadow: 0em 0em 1.5em black;
 }
 
-.selection-project img {
+.card:visited {
+    color: black
+}
+
+.card img {
     height: 30vh;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
 }
 
-.selection-project b {
+.card b {
+    display: block;
     font-size: 2em;
 }
 
-.selection-project i {
+.card i {
     font-size: 1.2em;
     display: -webkit-box;
     overflow: hidden;
@@ -44,6 +46,14 @@
     -webkit-box-orient: vertical;
 }
 
-.selection-project b, .selection-project i {
+.card b, .card i {
     margin: 5%;
+}
+
+.dungeons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

@@ -57,3 +57,19 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+.video {
+    display: none;
+    height: 26vh;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.card:hover .video {
+    display: block;
+    animation-play-state: paused;
+}
+
+.card:hover img {
+    display: none;
+}

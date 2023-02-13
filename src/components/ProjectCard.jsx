@@ -4,9 +4,9 @@ const ProjectCard = ({ img, title, description }) => {
   return (
     <a href='#projectdd' className='card'>
       <section>
-        {/* <video autoPlay loop muted width='320' height='240'>
+        <video autoPlay loop muted className='video'>
           <source src={video} type='video/mp4' />
-        </video> */}
+        </video>
         <img src={img} alt='project1' />
       </section>
       <b>{title}</b>

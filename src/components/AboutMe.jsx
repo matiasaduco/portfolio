@@ -1,10 +1,11 @@
 import '../styles/aboutMe.css';
 import perfil from '../assets/images/perfil.jpg';
 import blankPerfil from '../assets/images/blank-perfil.png';
+import cv from '../assets/downloads/CV_2023021419512713.pdf';
 
 const AboutMe = () => {
   return (
-    <div className='aboutMe'>
+    <div className='aboutMe' id='inicio'>
       <img src={blankPerfil} alt='Foto de Perfil' />
       <div className='flex-wrap details'>
         <h1 className='name'>Matías González Aduco</h1>
@@ -30,7 +31,9 @@ const AboutMe = () => {
             <i>Inglés - Intermedio</i>
           </span>
         </div>
-        <button className='button'>Descargar CV</button>
+        <a href={cv} download='cv.pdf'>
+          <button className='button'>Descargar CV</button>
+        </a>
       </div>
     </div>
   );

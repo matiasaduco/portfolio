@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
-    /* background-color: #0B263B; */
+    background-color: #0B263B;
 }
 
 .flex-wrap {

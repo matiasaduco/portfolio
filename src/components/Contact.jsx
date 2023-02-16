@@ -8,6 +8,7 @@ import html from '../assets/icons/languages/html.png';
 import css from '../assets/icons/languages/css.png';
 import javascript from '../assets/icons/languages/javascript.jpg';
 import react from '../assets/icons/tools/react.png';
+import vitejs from '../assets/icons/tools/vitejs.png';
 
 const Contact = () => {
   return (
@@ -37,6 +38,7 @@ const Contact = () => {
         <img src={css} alt='used2' />
         <img src={javascript} alt='used3' />
         <img src={react} alt='used4' />
+        <img src={vitejs} alt='used5' />
       </div>
     </footer>
   );

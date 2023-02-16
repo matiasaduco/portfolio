@@ -1,5 +1,6 @@
 .project {
-    padding: 5em;
+    padding: 4vw;
+    
 }
 
 .selection-project {
@@ -10,11 +11,14 @@
 .card {
     flex-basis: 20%;
     height: 51vh;
-    background-color: #FFFFFF;
     border: 0.1em solid grey;
     border-radius: 2%;
     transition: 0.3s;
     text-decoration: none;
+}
+
+.card, .card * {
+    background-color: #FFFFFF;
 }
 
 .card:hover {
@@ -56,20 +60,4 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
-
-.video {
-    display: none;
-    height: 26vh;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
-}
-
-.card:hover .video {
-    display: block;
-    animation-play-state: paused;
-}
-
-.card:hover img {
-    display: none;
 }

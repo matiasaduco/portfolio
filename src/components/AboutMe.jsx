@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div className='aboutMe' id='inicio'>
       <img src={blankPerfil} alt='Foto de Perfil' />
-      <div className='flex-wrap details'>
+      <span className='flex-wrap details'>
         <h1 className='name'>Matías González Aduco</h1>
         <div className='flex-wrap info'>
           <span>
@@ -34,7 +34,7 @@ const AboutMe = () => {
         <a href={cv} download='cv.pdf'>
           <button className='button'>Descargar CV</button>
         </a>
-      </div>
+      </span>
     </div>
   );
 };

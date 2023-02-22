@@ -13,16 +13,18 @@ import vitejs from '../assets/icons/tools/vitejs.png';
 const Contact = () => {
   return (
     <footer id='contact'>
-      <div>
+      <div className='social-network'>
         <a
           href='https://github.com/matiasaduco?tab=repositories'
           target='_blank'
           rel='noreferrer'
         >
           <img src={github} alt='red1' />
+          <span>github.com/matiasaduco</span>
         </a>
-        <a href='mailto:matias.aduco@gmail.com.com'>
+        <a href='mailto:matias.aduco@gmail.com'>
           <img src={gmail} alt='red2' />
+          <span>matias.aduco@gmail.com</span>
         </a>
         <a
           href='https://www.linkedin.com/in/matias-aduco/'
@@ -30,10 +32,11 @@ const Contact = () => {
           rel='noreferrer'
         >
           <img src={linkedin} alt='red3' />
+          <span>linkedin.com/in/matias-aduco</span>
         </a>
       </div>
-      <div>
-        <section style={{ color: 'grey' }}>Tecnología Usada</section>
+      <div className='used-tecnology'>
+        <section>Tecnología Usada</section>
         <img src={html} alt='used1' />
         <img src={css} alt='used2' />
         <img src={javascript} alt='used3' />

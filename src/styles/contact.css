@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    border-top: 0.11em solid black;
     text-align: left;
     padding: 1em;
 }

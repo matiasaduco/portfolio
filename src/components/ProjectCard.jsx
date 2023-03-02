@@ -1,7 +1,7 @@
-const ProjectCard = ({ img, title, description }) => {
+const ProjectCard = ({ img, title, description, link }) => {
   return (
-    <a href='#projectdd' className='card'>
-      <section style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
+    <a href={link} target='_blank' rel='noreferrer' className='card'>
+      <section>
         <img src={img} alt='project1' />
       </section>
       <b>{title}</b>

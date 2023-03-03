@@ -1,5 +1,6 @@
 .project {
-    padding: 4vw;
+    margin-top: 3em;
+    margin-bottom: 10em;
 }
 
 .selection-project {
@@ -15,10 +16,11 @@
     border-radius: 2%;
     transition: 0.3s;
     text-decoration: none;
+    background-color: #F1F1F1;
 }
 
-.card, .card * {
-    background-color: #F1F1F1;
+.card * {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .card section {

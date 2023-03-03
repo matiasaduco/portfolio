@@ -2,9 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     margin: 0 auto;
+    background-color: #15476F;
 }
+
+.aboutMe * { background-color: rgba(0, 0, 0, 0); }
 
 .aboutMe img {
     border-radius: 50%;
@@ -35,7 +38,7 @@
 
 .info i {
     color: gray;
-    font-size: 1.1vw;
+    font-size: 1.1em;
 }
 
 .button {

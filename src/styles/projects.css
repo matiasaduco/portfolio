@@ -1,6 +1,6 @@
 .project {
-    margin-top: 3em;
-    margin-bottom: 10em;
+    padding-top: 3em;
+    padding-bottom: 10em;
 }
 
 .selection-project {
@@ -9,14 +9,15 @@
 }
 
 .card {
-    min-width: 27em;
-    max-width: 27em;
-    height: 51vh;
+    min-width: 25em;
+    max-width: 25em;
+    height: 60vh;
     border: 0.1em solid grey;
     border-radius: 2%;
     transition: 0.3s;
     text-decoration: none;
     background-color: #F1F1F1;
+    color: black;
 }
 
 .card * {
@@ -30,12 +31,8 @@
 }
 
 .card:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     box-shadow: 0em 0em 1.5em black;
-}
-
-.card:visited {
-    color: black
 }
 
 .card img {

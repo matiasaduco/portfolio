@@ -1,6 +1,5 @@
 import '../styles/aboutMe.css';
 import perfil from '../assets/images/perfil.jpg';
-// import perfil from '../assets/images/blank-perfil.png';
 import cv from '../assets/downloads/CV_2023022817213428.pdf';
 
 const AboutMe = () => {

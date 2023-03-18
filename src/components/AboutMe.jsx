@@ -8,27 +8,13 @@ const AboutMe = () => {
       <img src={perfil} alt='Foto de Perfil' />
       <span className='flex-wrap details'>
         <h1 className='name'>Matías González Aduco</h1>
-        <div className='flex-wrap info'>
-          <span>
-            <b>Fecha de Nacimiento</b>
-            <br />
-            <i>26/10/1996</i>
-          </span>
-          <span>
-            <b>Formación Académica</b>
-            <br />
-            <i>Universidad Nacional de Quilmes - Estudiando</i>
-          </span>
-          <span>
-            <b>Ubicación</b>
-            <br />
-            <i>Buenos Aires, Argentina</i>
-          </span>
-          <span>
-            <b>Idiomas</b>
-            <br />
-            <i>Inglés - Intermedio</i>
-          </span>
+        <div className='biography'>
+          Hola, soy Matías Aduco! Soy programador Junior Full Stack. Aún me
+          encuentro cursando la carrera de Licenciatura en Informática, también
+          soy Docente Auxiliar Universitario en la UNQui. Actualmente me
+          encuentro en búsqueda de un trabajo como desarrollador. Pueden
+          descargar mi Curriculum justo aquí debajo. Mis redes se encuentran al
+          pie de la página!
         </div>
         <a href={cv} download='Matias Gonzalez Aduco.pdf'>
           <button className='button'>Descargar CV</button>

@@ -1,0 +1,27 @@
+#datos {
+    padding-top: 1em;
+}
+
+.info {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.info span {
+    flex-basis: 40%;
+    border: 0.1em solid black;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: white;
+}
+
+.info b {
+    font-size: 1.7vw;
+}
+
+.info i {
+    color: gray;
+    font-size: 1.1em;
+}

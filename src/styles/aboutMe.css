@@ -24,21 +24,14 @@
     flex-basis: 100%;
 }
 
-.info {
+.biography {
     width: 100%;
-}
-
-.info span {
-    flex-basis: 50%;
-}
-
-.info b {
-    font-size: 1.7vw;
-}
-
-.info i {
-    color: gray;
-    font-size: 1.1em;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: cadetblue;
+    background-color: #071623;
+    border-radius: 0.6em;
+    padding: 1em;
 }
 
 .button {
@@ -49,6 +42,7 @@
     background-color: #8D33FF;
     border: none;
     border-radius: 0.3em;
+    font-weight: bold;
 }
 
 .button:hover {

@@ -20,13 +20,13 @@
 }
 
 .name {
-    font-size: 4.7em;
+    font-size: 300%;
     flex-basis: 100%;
 }
 
 .biography {
     width: 100%;
-    font-size: 1.2vw;
+    font-size: 1.4em;
     font-weight: bold;
     color: cadetblue;
     background-color: #071623;
@@ -48,4 +48,28 @@
 .button:hover {
     cursor: pointer;
     background-color: #7000FF;
+}
+
+@media (max-width: 640px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMe img {
+        max-width: 35%;
+    }
+
+    .biography {
+        font-size: 0.9em;
+    }
+
+    .details {
+        margin: 0em 1em;
+    }
+
+    .name {
+        font-size: 180%;
+        flex-basis: 100%;
+        text-align: center;
+    }
 }

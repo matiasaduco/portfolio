@@ -47,3 +47,9 @@ html {
     text-align: center;
     margin: 0.4em;
 }
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 3em;
+    }
+}

@@ -25,3 +25,18 @@
     color: gray;
     font-size: 1.1em;
 }
+
+@media (max-width: 640px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .info b {
+        font-size: 3.5vw;
+    }
+
+    .info i {
+        color: gray;
+        font-size: 0.7em;
+    }
+}

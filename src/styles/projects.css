@@ -70,3 +70,49 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+@media (max-width: 640px) {
+    .selection-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 25em;
+        max-width: 25em;
+        height: 60vh;
+        border: 0.1em solid grey;
+        border-radius: 2%;
+        transition: 0.3s;
+        text-decoration: none;
+        background-color: #F1F1F1;
+        color: black;
+        margin: 1em;
+    }
+
+    .card img {
+        display: block;
+        margin: auto;
+        max-width: 27em;
+        height: 35vh;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        background-color: #FFFFFF;
+    }
+    
+    .card b {
+        display: block;
+        font-size: 2em;
+    }
+
+    .card i {
+        font-size: 1.2em;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

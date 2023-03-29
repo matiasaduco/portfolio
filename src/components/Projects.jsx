@@ -28,24 +28,6 @@ const Projects = () => {
             link={repositorie.html_url}
           />
         ))}
-        {/* <ProjectCard
-          img={no_lo_testeamos}
-          title='No Lo Testeamos Ni Un Poco'
-          description={description1}
-          link='https://github.com/matiasaduco/nltnup-app'
-        />
-        <ProjectCard
-          img={api_rest}
-          title='API'
-          description={description2}
-          link='https://github.com/matiasaduco/rotten-tomatoes/tree/main/Api'
-        />
-        <ProjectCard
-          img={rotten_tomatoes}
-          title='Rotten Tomatoes'
-          description={description3}
-          link='https://github.com/matiasaduco/rotten-tomatoes/tree/main/Web/rotten-tomatoes'
-        /> */}
       </section>
     </div>
   );

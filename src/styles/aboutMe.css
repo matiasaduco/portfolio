@@ -20,7 +20,7 @@
 }
 
 .name {
-    font-size: 300%;
+    font-size: 3em;
     flex-basis: 100%;
 }
 
@@ -48,6 +48,24 @@
 .button:hover {
     cursor: pointer;
     background-color: #7000FF;
+}
+
+@media screen and (max-width: 1366px){
+    .aboutMe img {
+        max-width: 20%;
+    }
+
+    .biography {
+        font-size: 1.0em;
+    }
+
+    .details {
+        margin: 0em 1em;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
 }
 
 @media (max-width: 640px) {

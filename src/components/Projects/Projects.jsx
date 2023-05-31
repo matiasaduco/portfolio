@@ -1,7 +1,7 @@
-import '../styles/projects.css';
-import ProjectCard from './ProjectCard';
+import './projects.css';
+import ProjectCard from './ProjectCard/ProjectCard';
 import { useState, useEffect } from 'react';
-import projects from '../assets/images/projects/Projects';
+import projects from '../../assets/images/projects/Projects';
 
 const Projects = () => {
   const [repositories, setRepositories] = useState([{}]);

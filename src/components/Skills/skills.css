@@ -1,16 +1,17 @@
 .skills {
-    padding: 5vw;
+    padding: 2vw;
     background-color: #0B263B;
 }
 
 .habilities {
     justify-content: space-around;
     margin: 0.7em auto;
-    width: 80%;
+    width: 100%;
 }
 
 .habilities img {
     flex-basis: 16%;
     max-width: 8vw;
     max-height: 8vw;
+    object-fit: contain;
 }

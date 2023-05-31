@@ -1,4 +1,4 @@
-import image_not_found from '../assets/images/projects/image-not-found.png';
+import image_not_found from '../../../assets/images/projects/image-not-found.png';
 
 const ProjectCard = ({ img, title, description, link }) => {
   return (

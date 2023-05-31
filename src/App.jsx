@@ -1,10 +1,10 @@
-import NavBar from './components/NavBar';
-import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
 import './App.css';
-import Datos from './components/Datos';
+import NavBar from './components/NavBar/NavBar';
+import AboutMe from './components/AboutMe/AboutMe';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Datos from './components/Datos/Datos';
 
 function App() {
   return (

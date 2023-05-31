@@ -1,14 +1,13 @@
-import '../styles/contact.css';
+import './contact.css';
 
-import github from '../assets/icons/tools/github.png';
-import gmail from '../assets/icons/gmail.png';
-import linkedin from '../assets/icons/linkedin.png';
+import github from '../../assets/icons/social/github.png';
+import gmail from '../../assets/icons/social/gmail.png';
+import linkedin from '../../assets/icons/social/linkedin.png';
 
-import html from '../assets/icons/languages/html.png';
-import css from '../assets/icons/languages/css.png';
-import javascript from '../assets/icons/languages/javascript.jpg';
-import react from '../assets/icons/tools/react.png';
-import vitejs from '../assets/icons/tools/vitejs.png';
+import html from '../../assets/icons/languages/frontend/html5.png';
+import css from '../../assets/icons/languages/frontend/css3.png';
+import javascript from '../../assets/icons/languages/frontend/javascript.png';
+import react from '../../assets/icons/languages/frontend/react.png';
 
 const Contact = () => {
   return (
@@ -41,7 +40,6 @@ const Contact = () => {
         <img src={css} alt='used2' />
         <img src={javascript} alt='used3' />
         <img src={react} alt='used4' />
-        <img src={vitejs} alt='used5' />
       </div>
     </footer>
   );

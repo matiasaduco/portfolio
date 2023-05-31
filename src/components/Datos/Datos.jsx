@@ -1,5 +1,5 @@
-import '../styles/datos.css';
-import Card from './Card';
+import './datos.css';
+import Card from './Card/Card';
 
 const Datos = () => {
   const info = [

@@ -1,11 +1,21 @@
-import './aboutMe.css';
-import perfil from '../../assets/images/perfil.jpg';
-import cv from '../../assets/downloads/CV_2023022817213428.pdf';
+import './aboutMe.css'
+import perfil from '../../assets/images/perfil.jpg'
+import cv from '../../assets/downloads/CV_2023022817213428.pdf'
+import { useState, useEffect } from 'react';
 
 const AboutMe = () => {
+  const [avatarUrl, setAvatarUrl] = useState(null)
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/matiasaduco')
+      .then((response) => response.json())
+      .then(({ avatar_url }) => setAvatarUrl(avatar_url))
+      .catch((e) => console.error(e))
+  }, [])
+
   return (
     <div className='aboutMe' id='inicio'>
-      <img src={perfil} alt='Foto de Perfil' />
+      <img src={avatarUrl ?? perfil} alt='Foto de Perfil' />
       <span className='flex-wrap details'>
         <h1 className='name'>Matías González Aduco</h1>
         <div className='biography'>
@@ -21,7 +31,7 @@ const AboutMe = () => {
         </a>
       </span>
     </div>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

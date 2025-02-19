@@ -1,55 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    scroll-behavior: smooth;
-    background-color: rgba(0, 0, 0, 0)
-}
-
-html {
-    background-color: #071623
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+  background-color: #0e0e0e;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0);
+  background-color: #0e0e0e;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
-    font-size: 5em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0.2em;
-    color: white;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.2em;
+  color: white;
 }
 
 .subtitle {
-    font-size: 3em;
-    color: grey;
-    text-align: center;
-    margin: 0.4em;
+  font-size: 3em;
+  color: grey;
+  text-align: center;
+  margin: 0.4em;
 }
 
 @media (max-width: 640px) {
-    .title {
-        font-size: 3em;
-    }
+  .title {
+    font-size: 3em;
+  }
 }

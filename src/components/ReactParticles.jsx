@@ -22,8 +22,13 @@ const ReactParticles = () => {
       id='tsparticles'
       init={particlesInit}
       loaded={particlesLoaded}
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}
       options={{
-        fullScreen: { zIndex: -1 },
+        fullScreen: { zIndex: -1, enable: false },
         fpsLimit: 120,
         interactivity: {
           events: {

@@ -4,7 +4,7 @@ import perfil from '@/assets/images/perfil.jpg'
 // import linkedin from '@/assets/images/linkedin.png'
 import cv from '@/assets/downloads/CV_2023022817213428.pdf'
 import { Button } from 'primereact/button'
-import ReactParticles from '../../components/ReactParticles'
+import ReactParticles from '@/components/ReactParticles'
 
 const AboutMe = () => {
   return (
@@ -14,7 +14,7 @@ const AboutMe = () => {
       style={{ width: '75%', margin: 'auto' }}
     >
       <ReactParticles />
-      <img className='profile w-100' src={perfil} alt='Foto de Perfil' />
+      <img className='profile w-100 z-1' src={perfil} alt='Foto de Perfil' />
       <div className='flex flex-col gap-4'>
         <div className='biography'>
           Hola, soy <strong>Matías Aduco</strong>

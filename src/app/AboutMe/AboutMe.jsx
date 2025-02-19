@@ -14,18 +14,28 @@ const AboutMe = () => {
       style={{ width: '75%', margin: 'auto' }}
     >
       <ReactParticles />
-      <img className='profile w-100 z-1' src={perfil} alt='Foto de Perfil' />
+      <img
+        className='profile w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
+        src={perfil}
+        alt='Foto de Perfil'
+      />
       <div className='flex flex-col gap-4'>
         <div className='biography'>
-          Hola, soy <strong>Matías Aduco</strong>
-          <br />
-          Desarrollador Full Stack
-          <br />
-          Me encuentro cursando la carrera de Licenciatura en Informática,
-          también soy Docente Auxiliar Universitario en la UNQui. Actualmente me
-          encuentro en búsqueda de un trabajo como desarrollador. Pueden
-          descargar mi Curriculum justo aquí debajo. Mis redes se encuentran al
-          pie de la página!
+          Hola, soy{' '}
+          <strong className='bg-gradient-to-r from-[#06B6D4] to-white bg-clip-text text-transparent'>
+            Matías Aduco
+          </strong>
+          <p className='font-bold mb-1 text-[#32dbbc]'>
+            Desarrollador Full Stack
+          </p>
+          Tengo <b className='text-[#bd98d8]'>+2 años de experiencia</b>{' '}
+          en el desarrollo de aplicaciones web. Me especializo con tecnologías
+          como{' '}
+          <b className='text-[#eee8a9]'>
+            React, Vue, Node.js, Express y SQL
+          </b>
+          . Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de
+          nuevos desafíos.
         </div>
         <div className='flex gap-4 md:justify-center lg:justify-start'>
           <a

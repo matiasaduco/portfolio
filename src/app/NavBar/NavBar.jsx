@@ -1,26 +1,23 @@
-import './navbar.css';
-
 const Menu = () => {
   return (
-    <header>
-      <nav className='navbar'>
-        <ul className='menu'>
-          <li id='selected'>
-            <a href='#inicio'>Inicio</a>
-          </li>
-          <li>
-            <a href='#datos'>Datos</a>
-          </li>
-          <li>
-            <a href='#skills'>Skills</a>
-          </li>
-          <li>
-            <a href='#projects'>Proyectos</a>
-          </li>
-        </ul>
+    <header
+      className='fixed top-0'
+      style={{
+        width: '100%',
+        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(255, 255, 255, 0.01)',
+      }}
+    >
+      <nav className='flex justify-center gap-3'>
+        <a href='#inicio' className='p-button p-button-text'>
+          Proyectos
+        </a>
+        <a href='#datos' className='p-button p-button-text'>
+          Experiencia
+        </a>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

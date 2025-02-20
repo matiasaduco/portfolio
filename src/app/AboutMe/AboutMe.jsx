@@ -20,7 +20,10 @@ const AboutMe = () => {
         alt='Foto de Perfil'
       />
       <div className='flex flex-col gap-4'>
-        <div className='biography'>
+        <div
+          className='biography border border-1 border-[#06B6D4] bg-[#06B6D4]/5 p-4'
+          style={{ backdropFilter: 'blur(10px)' }}
+        >
           Hola, soy{' '}
           <strong className='bg-gradient-to-r from-[#06B6D4] to-white bg-clip-text text-transparent'>
             Matías Aduco
@@ -28,13 +31,10 @@ const AboutMe = () => {
           <p className='font-bold mb-1 text-[#32dbbc]'>
             Desarrollador Full Stack
           </p>
-          Tengo <b className='text-[#bd98d8]'>+2 años de experiencia</b>{' '}
-          en el desarrollo de aplicaciones web. Me especializo con tecnologías
-          como{' '}
-          <b className='text-[#eee8a9]'>
-            React, Vue, Node.js, Express y SQL
-          </b>
-          . Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de
+          Tengo <b className='text-[#bd98d8]'>+2 años de experiencia</b> en el
+          desarrollo de aplicaciones web. Me especializo con tecnologías como{' '}
+          <b className='text-[#eee8a9]'>React, Vue, Node.js, Express y SQL</b>.
+          Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de
           nuevos desafíos.
         </div>
         <div className='flex gap-4 md:justify-center lg:justify-start'>

@@ -1,11 +1,11 @@
 const Menu = () => {
   return (
     <header
-      className='fixed top-0'
+      className='fixed top-0 z-2'
       style={{
         width: '100%',
         backdropFilter: 'blur(10px)',
-        backgroundColor: 'rgba(255, 255, 255, 0.01)',
+        backgroundColor: 'rgba(255, 255, 255, 0.02)',
       }}
     >
       <nav className='flex justify-center gap-3'>

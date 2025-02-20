@@ -45,8 +45,24 @@ const AboutMe = () => {
           >
             Descargar CV
           </a>
-          <Button label='GitHub' icon='pi pi-github' rounded outlined />
-          <Button label='Linkedin' icon='pi pi-linkedin' rounded outlined />
+          <Button
+            label='GitHub'
+            icon='pi pi-github'
+            onClick={() =>
+              window.open('https://github.com/matiasaduco', '_blank')
+            }
+            rounded
+            outlined
+          />
+          <Button
+            label='Linkedin'
+            icon='pi pi-linkedin'
+            onClick={() =>
+              window.open('https://www.linkedin.com/in/matias-aduco/', '_blank')
+            }
+            rounded
+            outlined
+          />
         </div>
       </div>
     </div>

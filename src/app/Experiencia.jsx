@@ -1,6 +1,6 @@
 const Experiencia = () => {
   return (
-    <section id='experiencia' className='py-20'>
+    <section id='experiencia' className='py-10'>
       <h1 className='text-center text-6xl mb-15'>Experiencia</h1>
 
       <ol className='relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-2xl'>

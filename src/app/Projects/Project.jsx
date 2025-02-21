@@ -2,26 +2,29 @@ import { Chip } from 'primereact/chip'
 import classNames from 'classnames'
 
 const Project = ({ image, title, description, tecnologies }) => {
+  const base = 'flex justify-center gap-12 border-1 p-4 rounded-3xl relative'
   const medium = 'md:h-[250px] md:bg-black'
   const large = 'lg:h-[400px] lg:bg-white/10'
-  const background = `bg-[url(${image})] bg-no-repeat bg-center bg-cover`
-  const base = 'flex justify-center gap-12 border-1 p-6 rounded-3xl'
+
+  const mdImage =
+    'md:absolute md:w-[100%] md:h-[100%] md:top-0 md:rounded-3xl md:brightness-50'
+  const lgImage =
+    'lg:w-[600px] lg:h-[350px] lg:border-1 lg:static lg:brightness-100'
+  // const content =
+  //   'before:bg-black/60 before:content-[""] before:absolute before:w-[100%] before:h-[100%] before:top-0 before:left-0 before:rounded-3xl'
 
   return (
-    <div className={classNames(base, medium, large, background)}>
+    <div className={classNames(base, medium, large)}>
       <img
         src={image}
-        className='w-[600px] h-[350px] object-cover border-1 md:hidden lg:block'
+        className={classNames('object-cover', mdImage, lgImage)}
       />
-      <span className='flex flex-col gap-6 w-[600px] relative'>
+      <span className='flex flex-col gap-6 w-[600px] z-1'>
         <h1 className='text-4xl'>{title}</h1>
         <p>{description}</p>
-        <div
-          className='flex flex-wrap gap-1 self-end mt-auto'
-          style={{ justifySelf: 'flex-end' }}
-        >
-          {tecnologies?.map((tecnology, index) => (
-            <Chip key={index} {...tecnology} />
+        <div className='flex flex-wrap gap-1 self-end mt-auto'>
+          {tecnologies?.map((props, index) => (
+            <Chip key={index} {...props} />
           ))}
         </div>
       </span>

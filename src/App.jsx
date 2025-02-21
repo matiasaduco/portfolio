@@ -3,7 +3,7 @@ import 'primereact/resources/themes/lara-light-cyan/theme.css'
 import 'primeicons/primeicons.css'
 import NavBar from '@/app/NavBar'
 import AboutMe from '@/app/AboutMe/AboutMe'
-import Experiencia from '@/app/Experiencia'
+import Experience from '@/app/Experience'
 import Skills from '@/app/Skills/Skills'
 import Projects from '@/app/Projects/Projects'
 import Contact from '@/app/Contact/Contact'
@@ -14,7 +14,7 @@ function App() {
     <PrimeReactProvider>
       <NavBar />
       <AboutMe />
-      <Experiencia />
+      <Experience />
       <Projects />
       {/* <Skills /> */}
       {/* <Contact /> */}

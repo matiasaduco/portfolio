@@ -2,8 +2,10 @@ import Project from './Project'
 import image1 from '@/assets/images/projects/api-rest.png'
 import image2 from '@/assets/images/projects/portfolio-angular.png'
 import image3 from '@/assets/images/projects/rotten-tomatoes.png'
+import { useTranslation } from 'react-i18next'
 
 const Projects = () => {
+  const { t } = useTranslation()
   // const [repositories, setRepositories] = useState([{}])
 
   // useEffect(() => {
@@ -15,7 +17,7 @@ const Projects = () => {
 
   return (
     <section id='projects' className='py-10'>
-      <h1 className='text-center text-6xl mb-15'>Proyectos</h1>
+      <h1 className='text-center text-6xl mb-15'>{t('projects')}</h1>
 
       <div className='flex flex-col justify-center items-center gap-10'>
         <Project

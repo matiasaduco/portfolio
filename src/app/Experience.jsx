@@ -1,14 +1,18 @@
-const Experiencia = () => {
+import { useTranslation } from 'react-i18next'
+
+const Experience = () => {
+  const { t } = useTranslation()
+
   return (
     <section id='experiencia' className='py-10'>
-      <h1 className='text-center text-6xl mb-15'>Experiencia</h1>
+      <h1 className='text-center text-6xl mb-15'>{t('experience')}</h1>
 
       <ol className='relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-2xl'>
-        {/* Universidad Nacional de Quilmes */}
         <li className='mb-10 ms-4'>
+          {/* Cambá */}
           <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
           <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            Julio 2023 - Presente
+            {t('july')} 2023 - {t('present')}
           </time>
           <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
             Cambá
@@ -22,7 +26,7 @@ const Experiencia = () => {
         <li className='mb-10 ms-4'>
           <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
           <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            Abril 2023 - Septiembre 2023
+            {t('april')} 2023 - {t('september')} 2023
           </time>
           <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
             Rwilde S.A.
@@ -33,11 +37,11 @@ const Experiencia = () => {
           </p>
         </li>
 
-        {/* Cambá */}
+        {/* Universidad Nacional de Quilmes */}
         <li className='ms-4'>
           <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
           <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            Marzo 2022 - Julio 2023
+            {t('march')} 2022 - {t('july')} 2023
           </time>
           <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
             Universidad Nacional de Quilmes
@@ -52,4 +56,4 @@ const Experiencia = () => {
   )
 }
 
-export default Experiencia
+export default Experience

@@ -15,8 +15,8 @@ function App() {
       <NavBar />
       <AboutMe />
       <Experiencia />
+      <Projects />
       {/* <Skills /> */}
-      {/* <Projects /> */}
       {/* <Contact /> */}
     </PrimeReactProvider>
   )

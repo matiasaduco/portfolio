@@ -2,13 +2,15 @@ import { Dropdown } from 'primereact/dropdown'
 import { useState } from 'react'
 import i18n from '@/utils/i18n'
 import { useTranslation } from 'react-i18next'
+import spain from '@/assets/icons/spain.svg'
+import uk from '@/assets/icons/uk.svg'
 
 const Menu = () => {
   const { t } = useTranslation()
   const [language, setLanguage] = useState('es')
   const languages = [
-    { label: t('spanish'), value: 'es', icon: 'pi pi-copy' },
-    { label: t('english'), value: 'en', icon: 'pi pi-file' },
+    { label: t('spanish'), value: 'es', image: spain },
+    { label: t('english'), value: 'en', image: uk },
   ]
 
   const changeLanguage = (e) => {
@@ -19,8 +21,8 @@ const Menu = () => {
   const selectedCountryTemplate = (option, props) => {
     if (option) {
       return (
-        <div className='flex items-center'>
-          <i className={`mr-2 ${option.icon}`} />
+        <div className='flex items-center w-[100px]'>
+          <img src={option.image} width='100%' height='100px' className='mr-2' />
           <div>{option.label}</div>
         </div>
       )
@@ -32,7 +34,7 @@ const Menu = () => {
   const countryOptionTemplate = (option) => {
     return (
       <div className='flex items-center'>
-        <i className={`mr-2 ${option.icon}`} />
+        <img src={option.image} width='40px' className='mr-2' />
         <div>{option.label}</div>
       </div>
     )
@@ -62,6 +64,16 @@ const Menu = () => {
           optionValue='value'
           valueTemplate={selectedCountryTemplate}
           itemTemplate={countryOptionTemplate}
+          pt={{
+            root: {
+              style: {
+                position: 'absolute',
+                right: '1rem',
+                backgroundColor: 'transparent',
+                border: 'none',
+              },
+            },
+          }}
         />
       </nav>
     </header>

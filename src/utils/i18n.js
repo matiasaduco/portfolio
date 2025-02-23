@@ -12,7 +12,7 @@ const resources = {
           <2>Full Stack Developer</2>
           I have <4>+2 years of experience</4> in web development.
           I specialize in technologies such as <7>React, Vue, Node.js, Express y SQL</7>.
-          I love learning new things and i am always looking for new challenges.
+          I love learning new things and I am always looking for new challenges.
         `,
       experience: 'Experience',
       projects: 'Projects',

@@ -1,8 +1,8 @@
 import './contact.css';
 
-import github from '../../assets/icons/social/github.png';
-import gmail from '../../assets/icons/social/gmail.png';
-import linkedin from '../../assets/icons/social/linkedin.png';
+// import github from '../../assets/icons/social/github.png';
+// import gmail from '../../assets/icons/social/gmail.png';
+// import linkedin from '../../assets/icons/social/linkedin.png';
 
 import html from '../../assets/icons/languages/frontend/html5.png';
 import css from '../../assets/icons/languages/frontend/css3.png';

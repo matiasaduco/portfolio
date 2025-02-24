@@ -29,7 +29,7 @@ const AboutMe = () => {
       />
       <div className='flex flex-col gap-4'>
         <div
-          className='biography border border-1 border-[#06B6D4] bg-[#06B6D4]/5 p-4'
+          className='biography border border-[#06B6D4] bg-[#06B6D4]/5 p-4'
           style={{ backdropFilter: 'blur(10px)' }}
         >
           <Trans i18nKey='hi'>
@@ -84,6 +84,7 @@ const AboutMe = () => {
           outlined
         />
       </div>
+      <i className='pi pi-chevron-down animate-bounce absolute md:bottom-[1rem] lg:bottom-[3rem] text-[#06B6D4]' />
     </div>
   )
 }

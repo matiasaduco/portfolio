@@ -14,7 +14,6 @@ const resources = {
           I specialize in technologies such as <7>React, Vue, Node.js, Express y SQL</7>.
           I love learning new things and I am always looking for new challenges.
         `,
-      experience: 'Experience',
       projects: 'Projects',
       resume: 'Resume',
       march: 'March',
@@ -23,6 +22,7 @@ const resources = {
       april: 'April',
       september: 'September',
       experience: {
+        title: 'Experience',
         camba: `
           At Cambá I was a Full Stack Developer in charge of the migration of
           AdminSE web to its new version using Vue 3 along with libraries like

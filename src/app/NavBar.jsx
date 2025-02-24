@@ -9,8 +9,8 @@ const Menu = () => {
   const { t } = useTranslation()
   const [language, setLanguage] = useState('es')
   const languages = [
-    { label: t('spanish'), value: 'es', image: spain },
-    { label: t('english'), value: 'en', image: uk },
+    { label: 'Español', value: 'es', image: spain },
+    { label: 'English', value: 'en', image: uk },
   ]
 
   const changeLanguage = (e) => {
@@ -51,7 +51,7 @@ const Menu = () => {
     >
       <nav className='flex justify-center gap-3'>
         <a href='#experiencia' className='p-button p-button-text'>
-          {t('experience')}
+          {t('experience.title')}
         </a>
         <a href='#projects' className='p-button p-button-text'>
           {t('projects')}

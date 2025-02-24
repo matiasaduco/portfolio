@@ -22,8 +22,25 @@ const resources = {
       present: 'Currently',
       april: 'April',
       september: 'September',
-      english: 'English',
-      spanish: 'Spanish',
+      experience: {
+        camba: `
+          At Cambá I was a Full Stack Developer in charge of the migration of
+          AdminSE web to its new version using Vue 3 along with libraries like
+          PrimeVue 3 and PrimeFlex.
+          Also I was in charge of its migration to the new version of PrimeVue,
+          going from PrimeVue version 3 to 4.
+        `,
+        rwilde: `
+          At Rwilde S.A. I was a Full Stack Developer in charge of the creation and
+          maintenance of the Rwilde S.A. website so that customers who found the
+          website could see all the Mercado Libre publications of said company.
+          This page was created with React.
+        `,
+        unqui: `
+          I was an academic assistant teacher of the Introduction to Programming
+          subject where I taught the basic concepts of programming to new students.
+        `,
+      },
     },
   },
   es: {
@@ -35,7 +52,6 @@ const resources = {
           Me especializo con tecnologías como <7>React, Vue, Node.js, Express y SQL</7>.
           Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de nuevos desafíos.
         `,
-      experience: 'Experiencia',
       projects: 'Proyectos',
       resume: 'Currículum',
       march: 'Marzo',
@@ -43,8 +59,27 @@ const resources = {
       present: 'Presente',
       april: 'Abril',
       september: 'Septiembre',
-      english: 'Inglés',
-      spanish: 'Español',
+      experience: {
+        title: 'Experiencia',
+        camba: `
+          En Cambá fuí Desarrollador Full Front End encargado de la migración de la web de
+          AdminSE a su nueva versión utilizando Vue 3 junto con librerías como
+          PrimeVue 3 y PrimeFlex.
+          También me encargué de su migración a la nueva versión de PrimeVue,
+          pasando de la versión 3 a la 4.
+        `,
+        rwilde: `
+          En Rwilde fuí Desarrollador Full Stack encargado de la creación y mantenimiento de
+          la web de Rwilde S.A. para que los clientes que hayaran la web
+          pudieran ver todas las publicaciones de Mercado Libre de dicha
+          empresa. Dicha página fue creada con React.
+        `,
+        unqui: `
+          Fuí docente auxiliar académico de la materia Introducción a la
+          Programación en donde enseñé los conceptos básicos de programación
+          para los nuevos alumnos. También corregía examenes.
+        `,
+      },
     },
   },
 }

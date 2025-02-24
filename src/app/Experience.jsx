@@ -5,7 +5,7 @@ const Experience = () => {
 
   return (
     <section id='experiencia' className='py-10'>
-      <h1 className='text-center text-6xl mb-15'>{t('experience')}</h1>
+      <h1 className='text-center text-6xl mb-15'>{t('experience.title')}</h1>
 
       <ol className='relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-2xl'>
         <li className='mb-10 ms-4'>
@@ -17,8 +17,8 @@ const Experience = () => {
           <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
             Cambá
           </h3>
-          <p className='mb-4 text-base font-normal text-gray-500 dark:text-gray-400'>
-            Desarrollador Full Stack
+          <p className='mb-2 text-base font-normal text-gray-500 dark:text-gray-400'>
+            {t('experience.camba')}
           </p>
         </li>
 
@@ -32,8 +32,7 @@ const Experience = () => {
             Rwilde S.A.
           </h3>
           <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
-            Desarrollador Full Stack encargado de mantener y mejorar la
-            plataforma de la empresa
+            {t('experience.rwilde')}
           </p>
         </li>
 
@@ -47,8 +46,7 @@ const Experience = () => {
             Universidad Nacional de Quilmes
           </h3>
           <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
-            Docente Auxiliar Académico de la materia Introducción a la
-            Programación
+            {t('experience.unqui')}
           </p>
         </li>
       </ol>

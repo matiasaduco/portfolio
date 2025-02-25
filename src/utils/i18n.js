@@ -41,6 +41,7 @@ const resources = {
           subject where I taught the basic concepts of programming to new students.
         `,
       },
+      knowledge: 'Knowledge',
     },
   },
   es: {
@@ -80,6 +81,7 @@ const resources = {
           para los nuevos alumnos. También corregía examenes.
         `,
       },
+      knowledge: 'Conocimientos',
     },
   },
 }

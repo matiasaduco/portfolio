@@ -19,6 +19,9 @@ const Menu = () => {
     setLanguage(value)
   }
 
+  const btnHover =
+    'text-[#06B6D4] p-4 border-b-2 border-b-[transparent] hover:border-b-[#06B6D4] transition duration-300 easi-in-out'
+
   return (
     <header
       className='fixed top-0 z-2 p-2'
@@ -28,14 +31,17 @@ const Menu = () => {
         backgroundColor: 'rgba(255, 255, 255, 0.02)',
       }}
     >
-      <nav className='flex justify-center gap-3'>
-        <a href='#experiencia' className='p-button p-button-text'>
-          {t('experience.title')}
-        </a>
-        <a href='#projects' className='p-button p-button-text'>
-          {t('projects')}
-        </a>
-        <div className='self-center absolute right-[2rem]'>
+      <nav className='flex justify-between items-center mx-10'>
+        <a href='#home' className='pi pi-code w-[123px]' />
+        <div className='my-3'>
+          <a href='#experience' className={btnHover}>
+            {t('experience.title')}
+          </a>
+          <a href='#projects' className={btnHover}>
+            {t('projects')}
+          </a>
+        </div>
+        <div className='w-[123px]'>
           <ButtonGroup>
             {languages.map((lang) => (
               <Button

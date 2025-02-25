@@ -1,4 +1,3 @@
-import './aboutMe.css'
 import perfil from '@/assets/images/perfil.jpg'
 import cv from '@/assets/downloads/CV_2023022817213428.pdf'
 import { Button } from 'primereact/button'
@@ -17,19 +16,20 @@ const AboutMe = () => {
 
   return (
     <div
-      id='inicio'
+      id='home'
       className='flex md:flex-col lg:flex-row h-screen justify-center items-center gap-12'
       style={{ width: '75%', margin: 'auto' }}
     >
       <ReactParticles />
       <img
-        className='profile w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
+        className='w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
         src={perfil}
         alt='Foto de Perfil'
+        style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
       />
       <div className='flex flex-col gap-4'>
         <div
-          className='biography border border-[#06B6D4] bg-[#06B6D4]/5 p-4'
+          className='text-[1.4em] border rounded-[0.6em] border-[#06B6D4] bg-[#06B6D4]/5 p-4'
           style={{ backdropFilter: 'blur(10px)' }}
         >
           <Trans i18nKey='hi'>
@@ -48,14 +48,6 @@ const AboutMe = () => {
           </Trans>
         </div>
         <div className='flex gap-4 md:justify-center lg:justify-start'>
-          <a
-            href={cv}
-            download='Matias Gonzalez Aduco.pdf'
-            className='gap-2 p-button font-bold p-button-rounded p-button-outlined'
-          >
-            <i className='pi pi-cloud-download' />
-            {t('resume')}
-          </a>
           <Button
             label='GitHub'
             icon='pi pi-github'
@@ -74,15 +66,21 @@ const AboutMe = () => {
             rounded
             outlined
           />
+          <Button
+            label={t('resume')}
+            icon='pi pi-cloud-download'
+            onClick={() => window.open(cv, '_blank')}
+            rounded
+            outlined
+          />
+          <Button
+            label='matias.aduco@gmail.com'
+            icon={`pi ${!copied ? 'pi-copy' : 'pi-check'}`}
+            onClick={copy}
+            rounded
+            outlined
+          />
         </div>
-        <Button
-          className='md:self-center lg:self-start'
-          label='matias.aduco@gmail.com'
-          icon={`pi ${!copied ? 'pi-copy' : 'pi-check'}`}
-          onClick={copy}
-          rounded
-          outlined
-        />
       </div>
       <i className='pi pi-chevron-down animate-bounce absolute md:bottom-[1rem] lg:bottom-[3rem] text-[#06B6D4]' />
     </div>

@@ -37,9 +37,9 @@ const Menu = () => {
           <a href='#experience' className={btnHover}>
             {t('experience.title')}
           </a>
-          <a href='#projects' className={btnHover}>
+          {/* <a href='#projects' className={btnHover}>
             {t('projects')}
-          </a>
+          </a> */}
         </div>
         <div className='w-[123px]'>
           <ButtonGroup>

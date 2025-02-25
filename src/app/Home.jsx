@@ -47,38 +47,67 @@ const AboutMe = () => {
             nuevos desafíos.
           </Trans>
         </div>
-        <div className='flex gap-4 md:justify-center lg:justify-start'>
-          <Button
-            label='GitHub'
-            icon='pi pi-github'
+        <div className='md:self-center lg:self-start'>
+          <i
+            className='pi pi-github cursor-pointer p-2 mr-2 hover:scale-130 transition'
+            style={{ fontSize: '2rem' }}
             onClick={() =>
               window.open('https://github.com/matiasaduco', '_blank')
             }
-            rounded
-            outlined
           />
-          <Button
-            label='Linkedin'
-            icon='pi pi-linkedin'
+          <i
+            className='pi pi-linkedin cursor-pointer hover:scale-130 transition'
+            style={{ fontSize: '2rem' }}
             onClick={() =>
               window.open('https://www.linkedin.com/in/matias-aduco/', '_blank')
             }
-            rounded
-            outlined
           />
+        </div>
+        <div className='md:self-center lg:self-start'>
           <Button
+            className='w-[280px]'
             label={t('resume')}
             icon='pi pi-cloud-download'
             onClick={() => window.open(cv, '_blank')}
             rounded
             outlined
+            style={{ marginRight: '1rem' }}
+            pt={{
+              root: {
+                className: 'active:scale-95',
+                style: {
+                  background: 'linear-gradient(to right, #06B6D4, #bd98d8)',
+                  color: 'white',
+                },
+              },
+              icon: {
+                style: {
+                  fontSize: '1.2rem',
+                },
+              },
+            }}
           />
           <Button
+            className='w-[280px]'
             label='matias.aduco@gmail.com'
             icon={`pi ${!copied ? 'pi-copy' : 'pi-check'}`}
             onClick={copy}
             rounded
             outlined
+            pt={{
+              root: {
+                className: 'active:scale-95',
+                style: {
+                  background: 'linear-gradient(to right, #06B6D4, #bd98d8)',
+                  color: 'white',
+                },
+              },
+              icon: {
+                style: {
+                  fontSize: '1.2rem',
+                },
+              },
+            }}
           />
         </div>
       </div>

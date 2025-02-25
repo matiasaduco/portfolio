@@ -77,7 +77,7 @@ const fadeIn = keyframes`
 
 const StyledMenu = styled.nav`
   animation-name: ${fadeIn};
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 `
 
 export default Menu

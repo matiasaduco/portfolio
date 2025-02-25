@@ -21,14 +21,14 @@ const AboutMe = () => {
       className='flex md:flex-col lg:flex-row h-screen justify-center items-center gap-12'
     >
       <ReactParticles />
-      <img
+      <StyledImage
         className='w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
         src={perfil}
         alt='Foto de Perfil'
         style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
       />
       <div className='flex flex-col gap-4'>
-        <article
+        <StyledArticle
           className='text-[1.4em] border rounded-[0.6em] border-[#06B6D4] bg-[#06B6D4]/5 p-4 font-[family-name:Chakra_Petch]'
           style={{ backdropFilter: 'blur(10px)' }}
         >
@@ -46,7 +46,7 @@ const AboutMe = () => {
             . Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de
             nuevos desafíos.
           </Trans>
-        </article>
+        </StyledArticle>
         <div className='md:self-center lg:self-start'>
           <StyledButton
             className='pi pi-github cursor-pointer p-2 mr-1 hover:scale-130 transition github-tooltip'
@@ -124,6 +124,26 @@ const StyledButton = styled.i`
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
   transform: scale(0);
+`
+
+const fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
+const StyledArticle = styled.article`
+  animation-name: ${fade};
+  animation-duration: 1.5s;
+`
+
+const StyledImage = styled.img`
+  animation-name: ${fade};
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 `
 
 export default AboutMe

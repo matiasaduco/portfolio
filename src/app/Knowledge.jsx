@@ -18,7 +18,7 @@ const Knowledge = () => {
     },
     body: {
       className:
-        'shadow-lg shadow-black rounded-md bg-radial-[at_0%_100%] from-[#06B6D4]/20 from-10% to-black to-90%',
+        'shadow-lg shadow-black rounded-md bg-radial-[at_0%_100%] from-[#06B6D4]/20 from-10% to-[#171717] to-90%',
     },
   }
 

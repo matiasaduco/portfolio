@@ -1,9 +1,9 @@
 import perfil from '@/assets/images/perfil.jpg'
 import cv from '@/assets/downloads/CV_2023022817213428.pdf'
-import { Button } from 'primereact/button'
 import ReactParticles from '@/components/ReactParticles'
 import { useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
+import { Tooltip } from 'primereact/tooltip'
 
 const AboutMe = () => {
   const [copied, setCopied] = useState(false)
@@ -15,10 +15,9 @@ const AboutMe = () => {
   }
 
   return (
-    <div
+    <section
       id='home'
       className='flex md:flex-col lg:flex-row h-screen justify-center items-center gap-12'
-      style={{ width: '75%', margin: 'auto' }}
     >
       <ReactParticles />
       <img
@@ -28,13 +27,13 @@ const AboutMe = () => {
         style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
       />
       <div className='flex flex-col gap-4'>
-        <div
-          className='text-[1.4em] border rounded-[0.6em] border-[#06B6D4] bg-[#06B6D4]/5 p-4'
+        <article
+          className='text-[1.4em] border rounded-[0.6em] border-[#06B6D4] bg-[#06B6D4]/5 p-4 font-[family-name:Chakra_Petch]'
           style={{ backdropFilter: 'blur(10px)' }}
         >
           <Trans i18nKey='hi'>
             Hola, soy
-            <b className='bg-gradient-to-r from-[#06B6D4] to-white bg-clip-text text-transparent'>
+            <b className='text-[#06B6D4] font-[family-name:Roboto]'>
               Matías Aduco
             </b>
             <p className='font-bold mb-1 text-[#32dbbc]'>
@@ -46,73 +45,64 @@ const AboutMe = () => {
             . Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de
             nuevos desafíos.
           </Trans>
-        </div>
+        </article>
         <div className='md:self-center lg:self-start'>
           <i
-            className='pi pi-github cursor-pointer p-2 mr-2 hover:scale-130 transition'
+            className='pi pi-github cursor-pointer p-2 mr-1 hover:scale-130 transition github-tooltip'
             style={{ fontSize: '2rem' }}
             onClick={() =>
               window.open('https://github.com/matiasaduco', '_blank')
             }
+            data-pr-position='right'
+            data-pr-my='left center-2'
           />
+          <Tooltip target='.github-tooltip'>
+            <i className='pi pi-external-link mr-2' />
+            GitHub
+          </Tooltip>
+
           <i
-            className='pi pi-linkedin cursor-pointer hover:scale-130 transition'
+            className='pi pi-linkedin cursor-pointer p-2 mr-1 hover:scale-130 transition linkedin-tooltip'
             style={{ fontSize: '2rem' }}
             onClick={() =>
               window.open('https://www.linkedin.com/in/matias-aduco/', '_blank')
             }
+            data-pr-position='right'
+            data-pr-my='left center-2'
           />
-        </div>
-        <div className='md:self-center lg:self-start'>
-          <Button
-            className='w-[280px]'
-            label={t('resume')}
-            icon='pi pi-cloud-download'
+          <Tooltip target='.linkedin-tooltip'>
+            <i className='pi pi-external-link mr-2' />
+            Linkedin
+          </Tooltip>
+
+          <i
+            className='pi pi-cloud-download cursor-pointer p-2 mr-1 hover:scale-130 transition resume-tooltip'
+            style={{ fontSize: '2rem' }}
             onClick={() => window.open(cv, '_blank')}
-            rounded
-            outlined
-            style={{ marginRight: '1rem' }}
-            pt={{
-              root: {
-                className: 'active:scale-95',
-                style: {
-                  background: 'linear-gradient(to right, #06B6D4, #bd98d8)',
-                  color: 'white',
-                },
-              },
-              icon: {
-                style: {
-                  fontSize: '1.2rem',
-                },
-              },
-            }}
+            data-pr-position='right'
+            data-pr-my='left center-2'
           />
-          <Button
-            className='w-[280px]'
-            label='matias.aduco@gmail.com'
-            icon={`pi ${!copied ? 'pi-copy' : 'pi-check'}`}
+          <Tooltip target='.resume-tooltip'>
+            <i className='pi pi-external-link mr-2' />
+            {t('resume')}
+          </Tooltip>
+
+          <i
+            className='pi pi-at cursor-pointer p-2 mr-1 hover:scale-130 transition knob'
+            style={{ fontSize: '2rem' }}
             onClick={copy}
-            rounded
-            outlined
-            pt={{
-              root: {
-                className: 'active:scale-95',
-                style: {
-                  background: 'linear-gradient(to right, #06B6D4, #bd98d8)',
-                  color: 'white',
-                },
-              },
-              icon: {
-                style: {
-                  fontSize: '1.2rem',
-                },
-              },
-            }}
+            data-pr-position='right'
+            data-pr-my='left center-2'
           />
+
+          <Tooltip target='.knob'>
+            <i className={`${copied ? 'pi pi-check' : 'pi pi-copy'} mr-2`} />
+            matias.aduco@gmail.com
+          </Tooltip>
         </div>
       </div>
       <i className='pi pi-chevron-down animate-bounce absolute md:bottom-[1rem] lg:bottom-[3rem] text-[#06B6D4]' />
-    </div>
+    </section>
   )
 }
 

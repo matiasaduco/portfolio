@@ -19,12 +19,12 @@ const Menu = () => {
     setLanguage(value)
   }
 
-  const btnHover =
-    'text-[#06B6D4] p-4 border-b-2 border-b-[transparent] hover:border-b-[#06B6D4] transition duration-300 easi-in-out'
+  const btn =
+    'text-[#06B6D4] p-4 border-b-2 border-b-[transparent] hover:border-b-[#06B6D4] transition duration-300 easi-in-out text-[1.1rem]'
 
   return (
     <header
-      className='fixed top-0 z-2 p-2'
+      className='fixed top-0 z-2 p-1'
       style={{
         width: '100%',
         backdropFilter: 'blur(10px)',
@@ -34,12 +34,15 @@ const Menu = () => {
       <nav className='flex justify-between items-center mx-10'>
         <a href='#home' className='pi pi-code w-[123px]' />
         <div className='my-3'>
-          <a href='#experience' className={btnHover}>
+          <a href='#experience' className={btn}>
             {t('experience.title')}
           </a>
-          {/* <a href='#projects' className={btnHover}>
+          {/* <a href='#projects' className={btn}>
             {t('projects')}
           </a> */}
+          <a href='#knowledge' className={btn}>
+            {t('knowledge')}
+          </a>
         </div>
         <div className='w-[123px]'>
           <ButtonGroup>
@@ -50,7 +53,7 @@ const Menu = () => {
               >
                 <img
                   src={lang.image}
-                  className={`object-cover w-[60px] h-[30px] ${
+                  className={`object-cover w-[40px] h-[25px] ${
                     lang.value === language ? 'grayscale-[0]' : 'grayscale'
                   }`}
                 />

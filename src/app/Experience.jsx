@@ -5,7 +5,7 @@ const Experience = () => {
 
   return (
     <section id='experience' className='py-10'>
-      <h1 className='text-center text-6xl mb-15'>{t('experience.title')}</h1>
+      <h1 className='text-center text-5xl mb-15'>{t('experience.title')}</h1>
 
       <ol className='relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-2xl'>
         <li className='mb-10 ms-4'>

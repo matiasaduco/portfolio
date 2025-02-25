@@ -5,6 +5,7 @@ import spain from '@/assets/icons/spain.svg'
 import uk from '@/assets/icons/uk.svg'
 import { ButtonGroup } from 'primereact/buttongroup'
 import { Button } from 'primereact/button'
+import styled, { keyframes } from 'styled-components'
 
 const Menu = () => {
   const { t } = useTranslation()
@@ -20,19 +21,18 @@ const Menu = () => {
   }
 
   const btn =
-    'text-[#06B6D4] p-4 border-b-2 border-b-[transparent] hover:border-b-[#06B6D4] transition duration-300 easi-in-out text-[1.1rem]'
+    'text-[#06B6D4] px-4 py-3 border-b-2 border-b-[transparent] hover:border-b-[#06B6D4] transition duration-300 easi-in-out text-[1.1rem]'
 
   return (
-    <header
-      className='fixed top-0 z-2 p-1'
-      style={{
-        width: '100%',
-        backdropFilter: 'blur(10px)',
-        backgroundColor: 'rgba(255, 255, 255, 0.02)',
-      }}
-    >
-      <nav className='flex justify-between items-center mx-10'>
-        <a href='#home' className='pi pi-code w-[123px]' />
+    <header className='fixed top-0 z-2 w-[100%]'>
+      <StyledMenu
+        className='flex justify-between items-center'
+        style={{
+          backdropFilter: 'blur(10px)',
+          backgroundColor: 'rgba(255, 255, 255, 0.02)',
+        }}
+      >
+        <a href='#home' className='pi pi-code w-[123px] text-center' />
         <div className='my-3'>
           <a href='#experience' className={btn}>
             {t('experience.title')}
@@ -44,7 +44,7 @@ const Menu = () => {
             {t('knowledge')}
           </a>
         </div>
-        <div className='w-[123px]'>
+        <div className='w-[123px] text-center'>
           <ButtonGroup>
             {languages.map((lang) => (
               <Button
@@ -61,9 +61,23 @@ const Menu = () => {
             ))}
           </ButtonGroup>
         </div>
-      </nav>
+      </StyledMenu>
     </header>
   )
 }
+
+const fadeIn = keyframes`
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+`
+
+const StyledMenu = styled.nav`
+  animation-name: ${fadeIn};
+  animation-duration: 1.5s;
+`
 
 export default Menu

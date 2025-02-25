@@ -4,6 +4,7 @@ import ReactParticles from '@/components/ReactParticles'
 import { useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 import { Tooltip } from 'primereact/tooltip'
+import styled, { keyframes } from 'styled-components'
 
 const AboutMe = () => {
   const [copied, setCopied] = useState(false)
@@ -47,7 +48,7 @@ const AboutMe = () => {
           </Trans>
         </article>
         <div className='md:self-center lg:self-start'>
-          <i
+          <StyledButton
             className='pi pi-github cursor-pointer p-2 mr-1 hover:scale-130 transition github-tooltip'
             style={{ fontSize: '2rem' }}
             onClick={() =>
@@ -61,9 +62,9 @@ const AboutMe = () => {
             GitHub
           </Tooltip>
 
-          <i
+          <StyledButton
             className='pi pi-linkedin cursor-pointer p-2 mr-1 hover:scale-130 transition linkedin-tooltip'
-            style={{ fontSize: '2rem' }}
+            style={{ fontSize: '2rem', animationDelay: '0.3s' }}
             onClick={() =>
               window.open('https://www.linkedin.com/in/matias-aduco/', '_blank')
             }
@@ -75,9 +76,9 @@ const AboutMe = () => {
             Linkedin
           </Tooltip>
 
-          <i
+          <StyledButton
             className='pi pi-cloud-download cursor-pointer p-2 mr-1 hover:scale-130 transition resume-tooltip'
-            style={{ fontSize: '2rem' }}
+            style={{ fontSize: '2rem', animationDelay: '0.6s' }}
             onClick={() => window.open(cv, '_blank')}
             data-pr-position='right'
             data-pr-my='left center-2'
@@ -87,9 +88,9 @@ const AboutMe = () => {
             {t('resume')}
           </Tooltip>
 
-          <i
+          <StyledButton
             className='pi pi-at cursor-pointer p-2 mr-1 hover:scale-130 transition knob'
-            style={{ fontSize: '2rem' }}
+            style={{ fontSize: '2rem', animationDelay: '0.9s' }}
             onClick={copy}
             data-pr-position='right'
             data-pr-my='left center-2'
@@ -105,5 +106,24 @@ const AboutMe = () => {
     </section>
   )
 }
+
+const popUp = keyframes`
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+`
+
+const StyledButton = styled.i`
+  animation-name: ${popUp};
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+`
 
 export default AboutMe

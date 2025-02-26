@@ -6,7 +6,7 @@ import backendIcon from '@/assets/icons/languages/backend/backend.png'
 import { useTranslation } from 'react-i18next'
 import { Card } from 'primereact/card'
 
-const Knowledge = () => {
+const Stack = () => {
   const { t } = useTranslation()
 
   const ptClass = {
@@ -34,8 +34,8 @@ const Knowledge = () => {
   ]
 
   return (
-    <section id='knowledge' className='py-10'>
-      <h1 className='text-center mb-15'>{t('knowledge')}</h1>
+    <section id='stack' className='py-10'>
+      <h1 className='text-center mb-15'>{t('stack')}</h1>
 
       <div className='flex justify-center gap-8'>
         {cards.map((card, index) => (
@@ -62,4 +62,4 @@ const Knowledge = () => {
   )
 }
 
-export default Knowledge
+export default Stack

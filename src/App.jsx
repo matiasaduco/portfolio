@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css'
 import NavBar from '@/app/NavBar'
 import Home from '@/app/Home'
 import Experience from '@/app/Experience'
-import Knowledge from '@/app/Knowledge'
+import Stack from '@/app/Stack'
 // import Projects from '@/app/Projects/Projects'
 // import AboutMe from '@/app/AboutMe'
 import { PrimeReactProvider } from 'primereact/api'
@@ -19,7 +19,7 @@ function App() {
         <Home />
         <Experience />
         {/* <Projects /> */}
-        <Knowledge />
+        <Stack />
         {/* <AboutMe /> */}
       </div>
     </PrimeReactProvider>

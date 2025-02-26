@@ -7,7 +7,7 @@ const Experience = () => {
   const ptClass = {
     root: {
       style: {
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgba(243, 244, 246, 0.03)',
         backdropFilter: 'blur(10px)',
       },
     },
@@ -19,7 +19,7 @@ const Experience = () => {
       },
     },
     body: {
-      className: 'text-white bg-gray-100/3',
+      className: 'text-white',
     },
   }
 
@@ -51,6 +51,7 @@ const Experience = () => {
             key={index}
             title={item.status}
             subTitle={item.date}
+            className='w-[40%] grow'
             pt={ptClass}
           >
             <p className='text-xl'>{item.description}</p>

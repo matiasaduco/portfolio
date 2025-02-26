@@ -40,8 +40,8 @@ const Menu = () => {
           {/* <a href='#projects' className={btn}>
             {t('projects')}
           </a> */}
-          <a href='#knowledge' className={btn}>
-            {t('knowledge')}
+          <a href='#stack' className={btn}>
+            {t('stack')}
           </a>
           {/* <a href='#aboutMe' className={btn}>
             {t('aboutMe')}

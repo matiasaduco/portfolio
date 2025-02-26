@@ -1,6 +1,5 @@
 import perfil from '@/assets/images/perfil.jpg'
-import cv from '@/assets/downloads/CV_2023022817213428.pdf'
-import ReactParticles from '@/components/ReactParticles'
+import cv from '@/assets/downloads/Matias Aduco.pdf'
 import { useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 import { Tooltip } from 'primereact/tooltip'
@@ -20,7 +19,6 @@ const Home = () => {
       id='home'
       className='flex md:flex-col lg:flex-row h-screen justify-center items-center gap-12'
     >
-      {/* <ReactParticles /> */}
       <StyledImage
         className='w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
         src={perfil}

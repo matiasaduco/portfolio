@@ -35,7 +35,7 @@ const Stack = () => {
 
   return (
     <section id='stack' className='py-10'>
-      <h1 className='text-center mb-15'>{t('stack')}</h1>
+      <h1 className='text-center mb-10'>{t('stack')}</h1>
 
       <div className='flex justify-center gap-8'>
         {cards.map((card, index) => (

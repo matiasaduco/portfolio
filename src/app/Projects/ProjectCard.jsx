@@ -1,10 +1,10 @@
 import { Chip } from 'primereact/chip'
 import classNames from 'classnames'
 
-const Project = ({ image, title, description, tecnologies }) => {
-  const base = 'flex justify-center gap-12 rounded-3xl relative group cursor-pointer'
-  const medium = 'md:h-[250px] md:bg-black md:border-1 md:hover:scale-110 md:transition md:duration-300 md:easi-in-out'
-  const large = 'lg:h-[400px] lg:bg-white/10 lg:border-0'
+const ProjectCard = ({ image, title, description, tecnologies }) => {
+  const base = 'w-[100%] flex justify-center gap-12 rounded-3xl relative group cursor-pointer bg-gray-100/3'
+  const medium = 'md:h-[300px] md:hover:scale-110 md:transition md:duration-300 md:easi-in-out'
+  const large = 'lg:h-[420px]'
 
   const mdImage =
     'md:absolute md:w-[100%] md:h-[100%] md:rounded-3xl md:brightness-50 group-hover:bg-cover'
@@ -31,4 +31,4 @@ const Project = ({ image, title, description, tecnologies }) => {
   )
 }
 
-export default Project
+export default ProjectCard

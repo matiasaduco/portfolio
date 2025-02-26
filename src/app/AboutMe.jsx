@@ -6,7 +6,7 @@ const AboutMe = () => {
 
   return (
     <footer id='aboutMe'>
-      <h1 className='text-center text-5xl mb-15'>{t('aboutMe')}</h1>
+      <h1 className='text-center mb-10'>{t('aboutMe')}</h1>
 
       <img
         src={perfil}

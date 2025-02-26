@@ -43,7 +43,7 @@ const Experience = () => {
 
   return (
     <section id='experience' className='py-10'>
-      <h1 className='text-center mb-15'>{t('experience.title')}</h1>
+      <h1 className='text-center mb-10'>{t('experience.title')}</h1>
 
       <div className='flex flex-wrap gap-4'>
         {events.map((item, index) => (

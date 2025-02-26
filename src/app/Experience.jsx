@@ -1,55 +1,62 @@
 import { useTranslation } from 'react-i18next'
+import { Card } from 'primereact/card'
 
 const Experience = () => {
   const { t } = useTranslation()
 
+  const ptClass = {
+    root: {
+      style: {
+        backgroundColor: 'transparent',
+        backdropFilter: 'blur(10px)',
+      },
+    },
+    title: {
+      className:
+        'text-transparent bg-linear-to-r from-[#06B6D4] to-white bg-clip-text',
+      style: {
+        fontSize: '2.1rem',
+      },
+    },
+    body: {
+      className: 'text-white bg-gray-100/3',
+    },
+  }
+
+  const events = [
+    {
+      status: 'Cambá',
+      date: `${t('july')} 2023 - ${t('present')}`,
+      description: t('experience.camba'),
+    },
+    {
+      status: 'Rwilde S.A.',
+      date: 'Febrero 2023 - Julio 2023',
+      description: t('experience.rwilde'),
+    },
+    {
+      status: 'Universidad Nacional de Quilmes',
+      date: 'Marzo 2022 - Julio 2023',
+      description: t('experience.unqui'),
+    },
+  ]
+
   return (
     <section id='experience' className='py-10'>
-      <h1 className='text-center text-5xl mb-15'>{t('experience.title')}</h1>
+      <h1 className='text-center mb-15'>{t('experience.title')}</h1>
 
-      <ol className='relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-2xl'>
-        <li className='mb-10 ms-4'>
-          {/* Cambá */}
-          <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
-          <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            {t('july')} 2023 - {t('present')}
-          </time>
-          <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
-            Cambá
-          </h3>
-          <p className='mb-2 text-base font-normal text-gray-500 dark:text-gray-400'>
-            {t('experience.camba')}
-          </p>
-        </li>
-
-        {/* Rwilde S.A. */}
-        <li className='mb-10 ms-4'>
-          <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
-          <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            {t('april')} 2023 - {t('september')} 2023
-          </time>
-          <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
-            Rwilde S.A.
-          </h3>
-          <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
-            {t('experience.rwilde')}
-          </p>
-        </li>
-
-        {/* Universidad Nacional de Quilmes */}
-        <li className='ms-4'>
-          <div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
-          <time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-            {t('march')} 2022 - {t('july')} 2023
-          </time>
-          <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
-            Universidad Nacional de Quilmes
-          </h3>
-          <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
-            {t('experience.unqui')}
-          </p>
-        </li>
-      </ol>
+      <div className='flex flex-wrap gap-4'>
+        {events.map((item, index) => (
+          <Card
+            key={index}
+            title={item.status}
+            subTitle={item.date}
+            pt={ptClass}
+          >
+            <p className='text-xl'>{item.description}</p>
+          </Card>
+        ))}
+      </div>
     </section>
   )
 }

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import i18n from '@/utils/i18n'
 import { useTranslation } from 'react-i18next'
-import spain from '@/assets/icons/spain.svg'
-import uk from '@/assets/icons/uk.svg'
+import spain from '@/assets/icons/flags/spain.svg'
+import uk from '@/assets/icons/flags/uk.svg'
 import { ButtonGroup } from 'primereact/buttongroup'
 import { Button } from 'primereact/button'
 import styled, { keyframes } from 'styled-components'
@@ -26,7 +26,7 @@ const Menu = () => {
   return (
     <header className='fixed top-0 z-2 w-[100%]'>
       <StyledMenu
-        className='flex justify-between items-center'
+        className='flex justify-between items-center h-[4rem]'
         style={{
           backdropFilter: 'blur(10px)',
           backgroundColor: 'rgba(255, 255, 255, 0.02)',
@@ -43,11 +43,15 @@ const Menu = () => {
           <a href='#knowledge' className={btn}>
             {t('knowledge')}
           </a>
+          {/* <a href='#aboutMe' className={btn}>
+            {t('aboutMe')}
+          </a> */}
         </div>
         <div className='w-[123px] text-center'>
           <ButtonGroup>
-            {languages.map((lang) => (
+            {languages.map((lang, index) => (
               <Button
+                key={index}
                 onClick={() => changeLanguage(lang.value)}
                 style={{ padding: '0' }}
               >

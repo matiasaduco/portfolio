@@ -17,7 +17,7 @@ const Projects = () => {
 
   return (
     <section id='projects' className='py-10'>
-      <h1 className='text-center text-6xl mb-15'>{t('projects')}</h1>
+      <h1 className='text-center mb-15'>{t('projects')}</h1>
 
       <div className='flex flex-col justify-center items-center gap-10'>
         <Project

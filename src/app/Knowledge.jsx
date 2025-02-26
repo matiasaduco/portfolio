@@ -1,5 +1,7 @@
 import frontend from '@/assets/icons/languages/frontend/Frontend'
 import backend from '@/assets/icons/languages/backend/Backend'
+import frontendIcon from '@/assets/icons/languages/frontend/frontend.png'
+import backendIcon from '@/assets/icons/languages/backend/backend.png'
 // import tools from '@/assets/icons/languages/tools/Tools'
 import { useTranslation } from 'react-i18next'
 import { Card } from 'primereact/card'
@@ -9,42 +11,47 @@ const Knowledge = () => {
 
   const ptClass = {
     root: {
-      style: { backgroundColor: 'transparent' },
+      style: {
+        backgroundColor: 'rgba(243, 244, 246, 0.03)',
+        backdropFilter: 'blur(10px)',
+        padding: '2rem',
+      },
+    },
+    header: {
+      className: 'w-[10rem] mx-auto',
     },
     title: {
-      className:
-        'text-transparent bg-radial-[at_0%_100%] from-[#06B6D4]/10 from-10% to-white to-70% bg-clip-text',
-      style: { fontSize: '2.1rem' },
-    },
-    body: {
-      className:
-        'shadow-lg shadow-black rounded-md bg-radial-[at_0%_100%] from-[#06B6D4]/20 from-10% to-[#171717] to-90%',
+      style: {
+        fontSize: '3rem',
+        color: 'white',
+      },
     },
   }
 
   const cards = [
-    { title: 'Front End', tecnologies: frontend },
-    { title: 'Back End', tecnologies: backend },
+    { title: 'Front End', icon: frontendIcon, tecnologies: frontend },
+    { title: 'Back End', icon: backendIcon, tecnologies: backend },
   ]
 
   return (
-    <section className='py-10' id='knowledge'>
-      <h1 className='text-center text-5xl mb-15'>{t('knowledge')}</h1>
+    <section id='knowledge' className='py-10'>
+      <h1 className='text-center mb-15'>{t('knowledge')}</h1>
 
-      <div className='flex flex-wrap justify-center gap-8'>
+      <div className='flex justify-center gap-8'>
         {cards.map((card, index) => (
           <Card
             key={index}
+            header={<img src={card.icon} />}
             title={card.title}
-            className='w-xl text-center'
+            className='text-center max-w-[50%]'
             pt={ptClass}
           >
-            <p className='m-0 flex flex-wrap gap-12 justify-center'>
+            <p className='mt-4 flex flex-wrap gap-12 justify-center'>
               {card.tecnologies.map((tecnology, index) => (
                 <img
                   key={index}
                   src={tecnology}
-                  className='w-[50px] h-[50px] object-contain'
+                  className='w-[70px] h-[70px] object-contain'
                 />
               ))}
             </p>

@@ -24,7 +24,7 @@ const resources = {
       experience: {
         title: 'Experience',
         camba: `
-          At Cambá I was a Full Stack Developer in charge of the migration of
+          At Cambá I am a Full Stack Developer in charge of the migration of
           AdminSE web to its new version using Vue 3 along with libraries like
           PrimeVue 3 and PrimeFlex.
           Also I was in charge of its migration to the new version of PrimeVue,
@@ -63,7 +63,7 @@ const resources = {
       experience: {
         title: 'Experiencia',
         camba: `
-          En Cambá fuí Desarrollador Full Front End encargado de la migración de la web de
+          En Cambá soy Desarrollador Full Front End encargado de la migración de la web de
           AdminSE a su nueva versión utilizando Vue 3 junto con librerías como
           PrimeVue 3 y PrimeFlex.
           También me encargué de su migración a la nueva versión de PrimeVue,

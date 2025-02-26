@@ -6,19 +6,21 @@ import Home from '@/app/Home'
 import Experience from '@/app/Experience'
 import Knowledge from '@/app/Knowledge'
 // import Projects from '@/app/Projects/Projects'
-// import Contact from '@/app/Contact/Contact'
+// import AboutMe from '@/app/AboutMe'
 import { PrimeReactProvider } from 'primereact/api'
+import Background from '@/components/background/Background'
 
 function App() {
   return (
     <PrimeReactProvider>
+      <Background />
       <NavBar />
-      <div className='w-[75%] mx-auto'>
+      <div className='w-[70%] mx-auto'>
         <Home />
         <Experience />
         {/* <Projects /> */}
         <Knowledge />
-        {/* <Contact /> */}
+        {/* <AboutMe /> */}
       </div>
     </PrimeReactProvider>
   )

@@ -6,7 +6,7 @@ import { useTranslation, Trans } from 'react-i18next'
 import { Tooltip } from 'primereact/tooltip'
 import styled, { keyframes } from 'styled-components'
 
-const AboutMe = () => {
+const Home = () => {
   const [copied, setCopied] = useState(false)
   const { t } = useTranslation()
 
@@ -20,7 +20,7 @@ const AboutMe = () => {
       id='home'
       className='flex md:flex-col lg:flex-row h-screen justify-center items-center gap-12'
     >
-      <ReactParticles />
+      {/* <ReactParticles /> */}
       <StyledImage
         className='w-100 z-1 drop-shadow-[0_0_10px_#06B6D4]'
         src={perfil}
@@ -146,4 +146,4 @@ const StyledImage = styled.img`
   animation-fill-mode: forwards;
 `
 
-export default AboutMe
+export default Home

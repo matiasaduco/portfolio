@@ -35,7 +35,7 @@ const Home = () => {
           <Trans i18nKey='hi'>
             Hola, soy
             <b className='text-[#06B6D4] font-[family-name:Roboto]'>
-              Matías Aduco
+              Matias Aduco
             </b>
             <p className='font-bold mb-1 text-[#32dbbc]'>
               Desarrollador Full Stack

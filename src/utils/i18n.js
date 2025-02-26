@@ -8,7 +8,7 @@ const resources = {
   en: {
     translation: {
       hi: `
-          Hi, I'm <1>Matías Aduco</1>
+          Hi, I'm <1>Matias Aduco</1>
           <2>Full Stack Developer</2>
           I have <4>+2 years of experience</4> in web development.
           I specialize in technologies such as <7>React, Vue, Node.js, Express y SQL</7>.
@@ -47,7 +47,7 @@ const resources = {
   es: {
     translation: {
       hi: `
-          Hola, soy <1>Matías Aduco</1>
+          Hola, soy <1>Matias Aduco</1>
           <2>Deasrrollador Full Stack</2>
           Tengo <4>+2 años de experiencia</4> en el desarrollo de aplicaciones web.
           Me especializo con tecnologías como <7>React, Vue, Node.js, Express y SQL</7>.

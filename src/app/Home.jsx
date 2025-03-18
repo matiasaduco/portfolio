@@ -38,7 +38,7 @@ const Home = () => {
             <p className='font-bold mb-1 text-[#32dbbc]'>
               Desarrollador Full Stack
             </p>
-            Tengo <b className='text-[#bd98d8]'>+2 años de experiencia</b> en el
+            Tengo <b className='text-[#bd98d8]'>+3 años de experiencia</b> en el
             desarrollo de aplicaciones web. Me especializo con tecnologías como{' '}
             <b className='text-[#eee8a9]'>React, Vue, Node.js, Express y SQL</b>
             . Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de

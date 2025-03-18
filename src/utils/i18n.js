@@ -10,7 +10,7 @@ const resources = {
       hi: `
           Hi, I'm <1>Matias Aduco</1>
           <2>Full Stack Developer</2>
-          I have <4>+2 years of experience</4> in web development.
+          I have <4>+3 years of experience</4> in web development.
           I specialize in technologies such as <7>React, Vue, Node.js, Express y SQL</7>.
           I love learning new things and I am always looking for new challenges.
         `,
@@ -49,7 +49,7 @@ const resources = {
       hi: `
           Hola, soy <1>Matias Aduco</1>
           <2>Deasrrollador Full Stack</2>
-          Tengo <4>+2 años de experiencia</4> en el desarrollo de aplicaciones web.
+          Tengo <4>+3 años de experiencia</4> en el desarrollo de aplicaciones web.
           Me especializo con tecnologías como <7>React, Vue, Node.js, Express y SQL</7>.
           Me encanta aprender cosas nuevas y siempre estoy en la búsqueda de nuevos desafíos.
         `,
